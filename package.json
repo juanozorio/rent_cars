@@ -18,6 +18,6 @@
     "express": "^4.17.2"
   },
   "scripts": {
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --poll --respawn src/server.ts"
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --poll --respawn src/server.ts"
   }
 }
