@@ -1,5 +1,5 @@
 import { Category } from "../model/Category"
-import { ICategoriesRepository } from "../respositories/ICategoriesRepository"
+import { ICategoriesRepository, ICreateCategoryDTO } from "../respositories/ICategoriesRepository"
 
 
 class PostgresCategoriesRepository implements ICategoriesRepository {
@@ -7,12 +7,12 @@ class PostgresCategoriesRepository implements ICategoriesRepository {
 
     findByName(name: string): Category {
         console.log(name);    
-        return null;''
+        return null;
     }
     list(): Category[] {
         return null;
     }
-    create(name: string, description: string): void {
+    create({ name, description }: ICreateCategoryDTO ): void {
         console.log(name, description);
     }
 }
